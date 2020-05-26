@@ -41,3 +41,27 @@ img {
   opacity: 1;
   transform: scale(1);
 }
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  padding: 5px;
+  margin: 0 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #191920;
+  overflow: hidden;
+  text-indent: -999px;
+  transition: 0.2s;
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  background: #444;
+}
